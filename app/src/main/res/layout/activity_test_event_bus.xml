@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_31ff7c"
+        android:textColor="@android:color/white">
+
+
+        <android.support.design.widget.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="新闻" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时事" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="要闻" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时事" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="要闻" />
+
+    </android.support.design.widget.TabLayout>
+
+    <TextView
+        android:id="@+id/m_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/top_tab"
+        android:background="@color/color_31c27c"
+        android:gravity="center"
+        android:text="这里是TestEventBus"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/m_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m_text"
+        android:text="下一个"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/m_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m_btn"
+        android:text="进度"
+        android:textSize="18dp" />
+
+
+    <com.example.sks.myapp.util.MaterialProgressBar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/m_pro"
+        android:layout_centerHorizontal="true"
+        app:bar_mode="DETERMINATE"
+        app:bar_progress="0.4" />
+
+
+</RelativeLayout>

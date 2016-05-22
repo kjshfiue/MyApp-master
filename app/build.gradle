@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.example.sks.myapp"
+        minSdkVersion 17
+        targetSdkVersion 23
+
+        versionCode 1
+        versionName "1.0"
+    }
+
+    productFlavors {
+        _360 {}
+        baidu {}
+        xiaomi {}
+        tencent {}
+        taobao {}
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            jni.srcDirs = []
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "IS_PUBLISH", "true"// 显示Log，格式化json日志
+            buildConfigField "String","ONLINE_URL","\"http://182.92.216.40/adapter/api/requestEncrypt\""
+        }
+        debug{
+            buildConfigField "boolean", "IS_PUBLISH", "false"// 显示Log，格式化json日志
+            buildConfigField "String","ONLINE_URL","\"http://182.92.216.40/adapter/api/requestEncrypt\""
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-annotations:23.2.0'
+    compile 'com.android.support:support-v4:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.alibaba:fastjson:1.1.44.android'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.squareup.okio:okio:1.6.0'
+    compile 'com.facebook.fresco:fresco:0.9.0'
+    compile 'de.greenrobot:greendao:2.1.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile project(':calendar-library')
+    compile project(':ptr-lib')
+    compile project(':library-times')
+    compile project(':fancalenderlibrary')
+    compile project(':calendar-card')
+    compile project(':yih-calendar-lib')
+    compile project(':ucrop')
+}

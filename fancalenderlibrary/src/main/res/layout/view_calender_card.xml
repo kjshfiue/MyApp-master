@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <TextView
+            style="@style/weekHeader"
+            android:text="@string/week_Sunday"
+            />
+        <TextView
+            style="@style/weekHeader"
+            android:text="@string/week_Monday"
+            />
+        <TextView
+            style="@style/weekHeader"
+            android:text="@string/week_Tuesday"
+            />
+        <TextView
+            style="@style/weekHeader"
+            android:text="@string/week_Wednesday"
+            />
+        <TextView
+            style="@style/weekHeader"
+            android:text="@string/week_Thursday"
+            />
+        <TextView
+            style="@style/weekHeader"
+            android:text="@string/week_Friday"
+            />
+        <TextView
+            style="@style/weekHeader"
+            android:text="@string/week_Saturday"
+            />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

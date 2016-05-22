@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FanCalenderLibrary</string>
+
+    <string-array name="week_sun" >
+        <item >sun</item>
+        <item >sun</item>
+        <item >sun</item>
+        <item >sun</item>
+    </string-array>
+    <string name="week_Sunday">日</string>
+    <string name="week_Monday">一</string>
+    <string name="week_Tuesday">二</string>
+    <string name="week_Wednesday">三</string>
+    <string name="week_Thursday">四</string>
+    <string name="week_Friday">五</string>
+    <string name="week_Saturday">六</string>
+</resources>

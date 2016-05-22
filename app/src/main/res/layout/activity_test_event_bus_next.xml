@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sks.myapp.test.TestEventBusNextActivity">
+
+    <Button
+        android:id="@+id/m_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布事件"
+        android:background="@color/color_31c27c"
+        />
+    <Button
+        android:id="@+id/m_btn_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="相册选"
+        />
+    <Button
+        android:id="@+id/m_btn_img2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+        />
+
+    <ImageView
+        android:id="@+id/m_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_bright"/>
+
+
+</LinearLayout>

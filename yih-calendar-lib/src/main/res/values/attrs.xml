@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="CalendarLayoutPager">
+    <attr name="android:background"/>
+    <attr name="calendar_dividerColor" format="color"/>
+    <attr name="calendar_dayBackground" format="reference|color"/>
+    <attr name="calendar_dayTextColor" format="color"/>
+    <attr name="calendar_titleTextColor" format="color"/>
+    <attr name="calendar_displayHeader" format="boolean"/>
+    <attr name="calendar_displayMonth" format="boolean"/>
+    <attr name="calendar_headerTextColor" format="color"/>
+    <attr name="calendar_selectType" format="string">
+        <enum name="SINGLE" value="0"/>
+        <enum name="MULTIPLE" value="1"/>
+        <enum name="RANGE" value="2"/>
+    </attr>
+  </declare-styleable>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="CalendarLayoutPager">
+    <attr name="android:background"/>
+    <attr name="calendar_dividerColor" format="color"/>
+    <attr name="calendar_dayBackground" format="reference|color"/>
+    <attr name="calendar_dayTextColor" format="color"/>
+    <attr name="calendar_titleTextColor" format="color"/>
+    <attr name="calendar_displayHeader" format="boolean"/>
+    <attr name="calendar_displayMonth" format="boolean"/>
+    <attr name="calendar_headerTextColor" format="color"/>
+    <attr name="calendar_selectType" format="string">
+        <enum name="SINGLE" value="0"/>
+        <enum name="MULTIPLE" value="1"/>
+        <enum name="RANGE" value="2"/>
+    </attr>
+  </declare-styleable>
+
+    <declare-styleable name="MaterialProgressBar">
+        <attr name="bar_color" format="color"/>
+        <attr name="bar_mode" format="enum">
+            <enum name="INDETERMINATE" value="0"/>
+            <enum name="DETERMINATE" value="1"/>
+        </attr>
+        <attr name="bar_width" format="dimension"/>
+        <attr name="bar_progress" format="float"/>
+        <attr name="rim_width" format="dimension"/>
+        <attr name="rim_color" format="color"/>
+        <attr name="bar_rimshown" format="boolean"/>
+    </declare-styleable>
+
+</resources>

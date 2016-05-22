@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sks.myapp.calendar.CalendarCardActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#dddddd"
+        >
+
+        <ImageButton
+            android:id="@+id/btnPreMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="33dip"
+            android:layout_toLeftOf="@+id/tvCurrentMonth"
+            android:background="@drawable/ic_before"/>
+
+        <ImageButton
+            android:id="@+id/btnNextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33dip"
+            android:layout_toRightOf="@+id/tvCurrentMonth"
+            android:background="@drawable/ic_next"/>
+
+        <TextView
+            android:id="@+id/tvCurrentMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="2000-01"
+            android:textColor="#323232"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip">
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/sunday"
+            android:textColor="@color/canlendar_text_color"/>
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/monday"
+            android:textColor="@color/canlendar_text_color"/>
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/thesday"
+            android:textColor="@color/canlendar_text_color"/>
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/wednesday"
+            android:textColor="@color/canlendar_text_color"/>
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/thursday"
+            android:textColor="@color/canlendar_text_color"/>
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/friday"
+            android:textColor="@color/canlendar_text_color"/>
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/saturday"
+            android:textColor="@color/canlendar_text_color"/>
+    </LinearLayout>
+    <com.wt.calendarcard.CalendarCardPager
+        android:id="@+id/calendarCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
